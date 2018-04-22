@@ -64,6 +64,6 @@ routeruser.route('/user/:id')
     var {id} = req.params;
     id = id -1;
    delete datas[id];
-    res.send(JSON.stringify(datas));
+    res.send(datas);
     //delete
   })
